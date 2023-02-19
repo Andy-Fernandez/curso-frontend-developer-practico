@@ -119,7 +119,10 @@ nav {
   display: block;
 }
 .mobile-menu {
+  position: absolute;
+  display: none;
   padding: 24px;
+  top: 61px;
 }
 .mobile-menu a {
   text-decoration: none;
@@ -145,6 +148,9 @@ nav {
 .sign-out {
   font-size: var(--sm);
   color: var(--hospital-green) !important;
+}
+.mobile-menu--active {
+  display: block;
 }
 @media (max-width: 640px) {
   .menu {
