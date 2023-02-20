@@ -126,7 +126,9 @@ header .order p {
 header .order select {
   border: none;
   font-weight: 400;
+  background-color: var(--white);
   font-size: var(--sm);
+  outline: none;
 }
 .desktop-menu {
   position: absolute;
