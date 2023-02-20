@@ -15,7 +15,6 @@ body {
 nav {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 24px;
   border-bottom: 1px solid var(--very-light-pink);
@@ -27,7 +26,8 @@ nav {
   width: 100px;
 }
 .navbar-left ul,
-.navbar-right ul {
+.navbar-right ul,
+header ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -41,11 +41,12 @@ nav {
 .navbar-left ul {
   margin-left: 12px;
 }
-.navbar-right ul li:first-child:hover{
+.navbar-right ul li:hover{
   cursor: pointer;
 }
 .navbar-left ul li a,
-.navbar-right ul li a {
+.navbar-right ul li a,
+header ul li a {
   text-decoration: none;
   color: var(--very-light-pink);
   border: 1px solid var(--white);
@@ -53,7 +54,8 @@ nav {
   border-radius: 8px;
 }
 .navbar-left ul li a:hover,
-.navbar-right ul li a:hover {
+.navbar-right ul li a:hover,
+header ul li a:hover {
   border: 1px solid var(--hospital-green);
   color: var(--hospital-green);
 }
@@ -78,6 +80,53 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+/* New Styles */
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 24px;
+}
+header .search {
+  display: flex;
+  height: 48px;
+  align-items: center;
+  background-color: var(--text-input-field);
+  color: var(--very-light-pink);
+  border-radius: 10px;
+}
+header ul{
+  overflow: hidden;
+}
+header .search img {
+  width: 16px;
+  margin: 12px;
+}
+header .search input{
+  border: none;
+  background-color: var(--text-input-field);
+  width: 80%;
+  font-size: var(--md);
+  outline: none;
+}
+header .search input::placeholder {
+  color: var(--very-light-pink);
+}
+header .order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+header .order p {
+  font-size: var(--sm);
+  font-weight: 700;
+}
+header .order select {
+  border: none;
+  font-weight: 400;
+  font-size: var(--sm);
 }
 .desktop-menu {
   position: absolute;
@@ -218,6 +267,20 @@ nav {
     display: none;
   }
   .navbar-email {
+    display: none;
+  }
+}
+@media (min-width: 641px) {
+  header {
+    flex-direction: row;
+    justify-content: left;
+    gap: 24px;
+    margin: 24px 0;
+  }
+  header .search {
+    width: 340px;
+  }
+  header ul{
     display: none;
   }
 }
