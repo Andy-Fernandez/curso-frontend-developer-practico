@@ -208,7 +208,7 @@ header .order select {
 .mobile-menu--active {
   display: block;
 }
-
+/* Poducts Section */
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, 240px);
