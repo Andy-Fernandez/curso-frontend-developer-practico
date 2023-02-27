@@ -173,9 +173,6 @@ header .order select {
   margin-bottom: 20px;
   display: inline-block;
 }
-.desktop-menu--active {
-  display: block;
-}
 
 /* Mobile Menu */
 .mobile-menu {
@@ -210,9 +207,6 @@ header .order select {
 .sign-out {
   font-size: var(--sm);
   color: var(--hospital-green) !important;
-}
-.mobile-menu--active {
-  display: block;
 }
 
 /* Poducts Section */
@@ -256,6 +250,7 @@ header .order select {
   margin-bottom: 0;
   color: var(--very-light-pink);
 }
+
 /* Generic classes */
 .inactive {
   display: none;
