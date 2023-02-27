@@ -5,11 +5,11 @@ const mobile_menu = document.querySelector('.mobile-menu');
 const cards_container = document.querySelector('.cards-container');
 
 navbar_email.addEventListener('click', () => {
-    desktop_menu.classList.toggle('desktop-menu--active');
+    desktop_menu.classList.toggle('inactive');
 });
 
 buttom_menu.addEventListener('click', () => {
-    mobile_menu.classList.toggle('mobile-menu--active');
+    mobile_menu.classList.toggle('inactive');
 });
 
 // Auto generate products cards
@@ -19,6 +19,7 @@ productList.push({
     price: 120,
     image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
 });
+
 productList.push ({
     name:'Bicycle helmet',
     price: 1200,

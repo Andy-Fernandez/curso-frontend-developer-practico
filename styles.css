@@ -139,7 +139,6 @@ header .order select {
 .desktop-menu {
   position: absolute;
   background-color: white;
-  display: none;
   width: 100px;
   height: auto;
   border: 1px solid var(--very-light-pink);
@@ -181,7 +180,6 @@ header .order select {
 /* Mobile Menu */
 .mobile-menu {
   position: absolute;
-  display: none;
   width: calc(100% - 48px);
   background-color: white;
   padding: 24px;
@@ -258,6 +256,11 @@ header .order select {
   margin-bottom: 0;
   color: var(--very-light-pink);
 }
+/* Generic classes */
+.inactive {
+  display: none;
+}
+
 @media (max-width: 640px) {
   .cards-container {
     grid-template-columns: repeat(auto-fill, 140px);
