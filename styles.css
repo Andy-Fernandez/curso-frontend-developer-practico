@@ -81,7 +81,10 @@ header ul li a:hover {
   justify-content: center;
   align-items: center;
 }
-/* New Styles */
+/* New Styles
+   I added a new class to the header element
+   this header contains the search bar and the order by select
+ */
 header {
   display: flex;
   flex-direction: column;
@@ -130,6 +133,9 @@ header .order select {
   font-size: var(--sm);
   outline: none;
 }
+/* Finish hrader Section */
+
+/* Burger menu: */
 .desktop-menu {
   position: absolute;
   background-color: white;
@@ -171,6 +177,8 @@ header .order select {
 .desktop-menu--active {
   display: block;
 }
+
+/* Mobile Menu */
 .mobile-menu {
   position: absolute;
   display: none;
@@ -208,6 +216,7 @@ header .order select {
 .mobile-menu--active {
   display: block;
 }
+
 /* Poducts Section */
 .cards-container {
   display: grid;
@@ -260,8 +269,6 @@ header .order select {
     width: 140px;
     height: 140px;
   }
-}
-@media (max-width: 640px) {
   .menu {
     display: block;
   }
