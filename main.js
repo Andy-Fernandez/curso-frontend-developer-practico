@@ -3,6 +3,8 @@ const desktop_menu = document.querySelector('.desktop-menu');
 const buttom_menu = document.querySelector('.menu');
 const mobile_menu = document.querySelector('.mobile-menu');
 const cards_container = document.querySelector('.cards-container');
+const navbar_shopping_cart = document.querySelector('.navbar-shopping-cart');
+const product_detail = document.querySelector('.product-detail');
 
 navbar_email.addEventListener('click', () => {
     desktop_menu.classList.toggle('inactive');
@@ -12,6 +14,9 @@ buttom_menu.addEventListener('click', () => {
     mobile_menu.classList.toggle('inactive');
 });
 
+navbar_shopping_cart.addEventListener('click', () => {
+    product_detail.classList.toggle('inactive');
+});
 
 
 // Auto generate products cards
