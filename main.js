@@ -12,6 +12,8 @@ buttom_menu.addEventListener('click', () => {
     mobile_menu.classList.toggle('inactive');
 });
 
+
+
 // Auto generate products cards
 const productList = [];
 productList.push({
