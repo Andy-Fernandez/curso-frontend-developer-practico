@@ -179,6 +179,7 @@ header .order select {
 .mobile-menu {
   position: absolute;
   width: calc(100% - 48px);
+  height: calc(100vh - 109px);
   background-color: white;
   padding: 24px;
   top: 61px;
