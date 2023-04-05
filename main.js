@@ -7,17 +7,24 @@ const navbar_shopping_cart = document.querySelector('.navbar-shopping-cart');
 const product_detail = document.querySelector('.product-detail');
 const main_container = document.querySelector('.main-container');
 
+// This is a call back function
+//This part of the code uses the constant 'navbar_email' and the
+//'.addEventListener' function to listen for a 'click' event on
+//this element. If the event is detected, the code continues with
+//the arrow function.
 navbar_email.addEventListener('click', () => {
-    desktop_menu.classList.toggle('inactive');
+    desktop_menu.classList.toggle('inactive'); // Add or remove the class 'inactive' from the element.
 });
 
+
 buttom_menu.addEventListener('click', () => {
-    mobile_menu.classList.toggle('inactive');
-    main_container.classList.toggle('inactive');
+    mobile_menu.classList.toggle('inactive'); // Add or remove the class 'inactive' from the element.
+    main_container.classList.toggle('inactive'); // Same as above.
 });
 
 navbar_shopping_cart.addEventListener('click', () => {
     product_detail.classList.toggle('inactive');
+    main_container.classList.toggle('inactive');
 });
 
 
@@ -28,7 +35,6 @@ productList.push({
     price: 120,
     image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
 });
-
 productList.push ({
     name:'Bicycle helmet',
     price: 1200,
@@ -83,6 +89,9 @@ productList.push ({
     </div>
 </div> */
 
+
+// iterates through the entire list 'productList'
+// and creates a new element for each product.
 for (product of productList) {
     const productCard = document.createElement('div');
     productCard.classList.add('product-card');

@@ -278,6 +278,9 @@ header .order select {
   font-size: var(--lg);
   font-weight: bold;
 }
+.my-order-content{
+  min-height: calc(100vh - 290 px);
+}
 .order {
   display: grid;
   grid-template-columns: auto 1fr;
